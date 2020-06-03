@@ -1,0 +1,38 @@
+.content-weather {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 850px;
+    border: 1px solid;
+    width: 315px;
+}
+@media (max-width: 991px) and (min-width: 766px){
+            .content-weather {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 780px;
+    border: 1px solid #dddddd;
+    width: 290px;
+}
+}
+@media (max-width: 765px) and (min-width: 666px){
+            .content-weather {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 630px;
+    border: 1px solid #dddddd;
+    width: 40%;
+}
+}
+ @media (max-width: 665px){
+             .content-weather {
+    text-align: center;
+    display: block;
+    position: relative;
+    border: 1px solid #dddddd;
+    width: 100%;
+    top:0;
+}
+}

@@ -1,0 +1,71 @@
+<div class="content-rate">
+<?php $rate = $block->getRate(); ?>
+
+<?php if(null !== $rate): ?>
+	<p>updated on <?php echo $rate->getCreatedAt(); ?></p>
+
+<table >
+    <tr>
+    <th>Symbol</th>
+    <th>Name</th>
+    <th>Rate</th>
+  </tr>
+
+   <tr>
+    <td>USD</td>
+    <td>United States Dollar</td>
+    <td>1 USD=</td>
+  </tr>
+    <tr>
+    <td>AUD</td>
+    <td>Australian Dollar</td>
+    <td><?php echo $rate->getAud(); ?></td>
+  </tr>
+   <tr>
+    <td>EUR</td>
+    <td>Euro</td>
+    <td><?php echo $rate->getEur(); ?></td>
+  </tr>
+   <tr>
+    <td>CAD</td>
+    <td>Canadian Dollar</td>
+    <td><?php echo $rate->getCad(); ?></td>
+  </tr>
+   <tr>
+    <td>CHF</td>
+    <td>Swiss Franc</td>
+    <td><?php echo $rate->getChf(); ?></td>
+  </tr>
+   <tr>
+    <td>CNY</td>
+    <td>Chinese Yuan</td>
+    <td><?php echo $rate->getCny(); ?></td>
+  </tr>
+   <tr>
+    <td>GBP</td>
+    <td>British Pound Sterling</td>
+    <td><?php echo $rate->getGbp(); ?></td>
+  </tr>
+   <tr>
+    <td>JPY</td>
+    <td>Japanese Yen</td>
+    <td><?php echo $rate->getJpy(); ?></td>
+  </tr>
+   <tr>
+    <td>RUB</td>
+    <td>Russian Ruble</td>
+    <td><?php echo $rate->getRub(); ?></td>
+  </tr>
+  <tr>
+    <td>VND</td>
+    <td>Vietnamese Dong</td>
+    <td><?php echo $rate->getVnd(); ?></td>
+  </tr>
+
+ 
+  
+</table>
+<?php else: ?>
+<h2>Data not found</h2>
+<?php endif; ?>
+</div>

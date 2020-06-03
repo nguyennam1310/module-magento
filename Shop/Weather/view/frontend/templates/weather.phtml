@@ -1,0 +1,21 @@
+<div class="content-weather">
+
+<?php $weather = $block->getWeather(); ?>
+
+<?php if(null !== $weather): ?>
+<h2><?php echo $weather->getCity(); ?></h2>
+<p>updated on <?php echo $weather->getCreatedAt(); ?></p>
+<h3><?php echo $weather->getDescription(); ?></h3>
+<img src="http://openweathermap.org/img/w/<?php echo $weather->getIcon(); ?>.png">
+<hr>
+<ul>
+    <li>temperature: <strong><?php echo $weather->getTemperature(); ?>℃</strong></li>
+    <li>pressure: <strong><?php echo $weather->getPressure(); ?>hPa</strong></li>
+    <li>humidity: <strong><?php echo $weather->getHumidity(); ?>%</strong></li>
+</ul>
+<?php else: ?>
+<h2>Data not found</h2>
+<?php endif; ?>
+</div>
+
+

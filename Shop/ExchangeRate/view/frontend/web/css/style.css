@@ -1,0 +1,33 @@
+.content-rate {
+    display: inline-block;
+    position: absolute;
+}
+.content-rate table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+.content-rate td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.content-rate tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media (max-width: 991px) and (min-width: 666px){
+            .content-rate td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 4px 4px;
+}
+          }
+ @media (max-width: 665px){
+            .content-rate {
+            	width: 100%;
+    display: block;
+    position: relative;
+    padding: 20px 0 40px 0;
+}
+}

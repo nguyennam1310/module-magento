@@ -1,0 +1,10 @@
+<?php
+
+$customerChatboxHelperData = $this->helper('Shop\CustomerChatbox\Helper\Data');
+?>
+<!-- Tawk.to Widget -->
+<?php if ($customerChatboxHelperData->getTawkToWidgetStatus()): ?>
+    <!-- Widget Code -->
+    <?= $customerChatboxHelperData->getTawkToWidgetCode(); ?>
+<?php endif; ?>
+<!-- End Tawk.to Widget -->
